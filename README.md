@@ -420,3 +420,11 @@ server.use('/api', router);
     console.log('JSON Server is running');
 });</b>
 </pre>
+## Test
+- https://deploy-json-server.herokuapp.com/api/categories
+- https://deploy-json-server.herokuapp.com/api/products
+- https://deploy-json-server.herokuapp.com/api/products?price_gte=900
+- https://deploy-json-server.herokuapp.com/api/products?name_like=Tasty
+- https://deploy-json-server.herokuapp.com/api/products?_page=1&_limit=5
+- https://deploy-json-server.herokuapp.com/api/products?_sort=price&_order=asc
+- https://deploy-json-server.herokuapp.com/api/products/product_id_you_want_to_update
