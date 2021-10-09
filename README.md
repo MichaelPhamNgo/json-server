@@ -427,4 +427,3 @@ server.use('/api', router);
 - https://deploy-json-server.herokuapp.com/api/products?name_like=Tasty
 - https://deploy-json-server.herokuapp.com/api/products?_page=1&_limit=5
 - https://deploy-json-server.herokuapp.com/api/products?_sort=price&_order=asc
-- https://deploy-json-server.herokuapp.com/api/products/product_id_you_want_to_update
