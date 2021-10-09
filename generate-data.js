@@ -76,4 +76,3 @@ const randomProductList = (categoryList, numberOfProducts) => {
 		console.log("Generate data successfully!!!");
     	});
 })()
-
