@@ -1,0 +1,49 @@
+@baseUrl = http://localhost:3000/api
+@resourceName=products
+
+# Products
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name filterProducts
+GET {{baseUrl}}/{{resourceName}}?color=maroon&price_gte=200
+###
+GET {{baseUrl}}/{{resourceName}}?price_gte=900
+###
+GET {{baseUrl}}/{{resourceName}}?name_like=Tasty
+###
+# @name pagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=5
+###
+# @name sort
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=asc
+
+###
+
+# @name addNew
+POST  {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "name" : "Laptop"
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/85a1ef8b-99b4-4d17-8b2b-e748416c3847
+Content-Type: application/json
+
+{    
+    "name": "Incredible Seafood Salad",    
+    "color": "mangoo",
+    "price": 960    
+}
+
+###
+
+# @name delete
+DELETE {{baseUrl}}/{{resourceName}}/2
